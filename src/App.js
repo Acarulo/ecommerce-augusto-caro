@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar';
 
 function App() {
+
+  /*
+  let name = "Augusto"
+  let edad = 29
+  let trabajos = {
+    maniana: "alumno",
+    tarde: "analista",
+    noche: "vago"
+  }
+  */
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Navbar />
+      
+      {/* 
+      <p>{name}</p>
+      <p>Caro</p>
+      <p>Edad: {edad}</p>
+      <p>Trabajos:</p>
+      <p>{trabajos.tarde}</p>
+      <input placeholder='Ingrese lo que quiera'></input>
+      */}
     </div>
   );
 }
