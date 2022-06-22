@@ -3,7 +3,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #A1A19D;
   }
   
   li {
@@ -26,6 +26,12 @@ ul {
     background-color: #04AA6D;
 }
 
+/*
 .about {
     float: right;
+}
+*/
+
+.cart {
+  float: right;
 }
