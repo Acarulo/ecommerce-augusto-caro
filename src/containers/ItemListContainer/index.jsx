@@ -1,7 +1,33 @@
 import React from 'react'
-import ItemCount from '../../components/ItemCount.js'
+import { useState, useEffect } from 'react';
+import Itemlist from '../../components/Itemlist/index.jsx';
 
 const ItemListContainer = ({greeting}) => {
+
+  const [productos, setProductos] = useState(null);
+
+  useEffect(() => {
+    const getProductos = async () => {
+      try {
+        const response = await fetch("/mocks/data.json");
+        const data = await response.json();
+        console.log(data);
+
+        setTimeout(() => {
+          setProductos(data);
+        }, 2000);
+        //setProductos(data);
+      } catch (error) {
+        console.log("Hubo un error");
+        console.log(error);
+      }
+    }
+
+    getProductos();
+
+  }, []);
+
+  console.log(productos);
 
   const addToCart = () => {
     console.log("El producto se agregó al carrito")
@@ -10,7 +36,11 @@ const ItemListContainer = ({greeting}) => {
   return (
     <div>
         <h1>{greeting}</h1>
-        <ItemCount addToCart={addToCart} stockDisponible={15}/>
+        {productos ?
+         <Itemlist productos = {productos}/>
+         :
+         null
+        }
     </div>
   )
 }

@@ -1,0 +1,31 @@
+[
+    {
+        "id": 1,
+        "title": "La noche estrellada",
+        "author": "Van Gogh, Vincent",
+        "price": 9000,
+        "image": "https://mymodernmet.com/es/noche-estrellada-van-gogh/"
+    },
+    {
+        "id": 2,
+        "title": "El grito",
+        "author": "Munch, Edvard",
+        "price": 15000,
+        "image": "https://cultivacultura.jimdofree.com/2014/04/20/el-grito-de-edvard-munch-curiosidades-e-historia/"
+    },
+    {
+        "id": 3,
+        "title": "El beso",
+        "author": "Klimt, Gustav",
+        "price": 8000,
+        "image": "https://www.wikiart.org/es/gustav-klimt/el-beso-1908"
+    },
+    {
+        "id": 4,
+        "title": "La joven de la perla",
+        "author": "Vermeer, Johannes",
+        "price": 40000,
+        "image": "https://es.wikipedia.org/wiki/La_joven_de_la_perla"
+    }
+
+]
